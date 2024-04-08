@@ -13,26 +13,24 @@
   </template>
   
   <script>
-  import { useRouter } from "vue-router";
-  export default {
-      name: 'TopHeader',
-      setup() {
-      const router = useRouter();
-  
-      const logout = () => {
-        // Perform login logic here
-        console.log("logout...");
-  
-        // After login logic, replace the current route with the home route
-        router.push('/logout');
-        //router.replace({ name: "logout" });
-      };
-  
-      return {
-        logout,
-      };
+export default {
+  name: "TopHeader",
+  components: {
+  },
+  data() {
+        return {
+        }
     },
-  }
+    methods: {
+      logout() {
+           this.$router.push('/logout');
+    },
+    created() {
+      console.log("HomePage mounted...");
+
+    },
+   }
+};
   </script>
   <style>
   .header {

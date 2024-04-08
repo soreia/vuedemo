@@ -12,31 +12,24 @@
 </template>
 
 <script>
-import { useRouter } from "vue-router";
 export default {
-    name: 'AboutPage',
-    setup() {
-    const router = useRouter();
-    //const username = ref("");
-
-    // onMounted(() => {
-
-    // //   username.value = "Liya.Su";
-    // });
-    const goHome = () => {
-      // Perform login logic here
-      console.log("goHome...");
-
-      // After login logic, replace the current route with the home route
-      router.replace({ name: "Home" });
-    };
-
-    return {
-        goHome,
-      // username
-    };
+  name: "AboutPage",
+  components: {
   },
-}
+  data() {
+        return {
+        }
+    },
+    methods: {
+        goHome() {
+           this.$router.push('/home');
+    },
+    created() {
+      console.log("HomePage mounted...");
+
+    },
+   }
+};
 </script>
 
 <style scoped>
