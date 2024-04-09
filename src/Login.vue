@@ -1,19 +1,19 @@
 <template>
   <div>
-    <div class="form-group">
-      <label for="username">Username</label>
-      <input type="text" id="username" v-model="username" required />
-    </div>
-    <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password" id="password" v-model="password" required />
-    </div>
-    <button @click="login">Login</button>
+    <el-form>
+      <el-form-item label="Username">
+        <el-input v-model="username" required></el-input>
+      </el-form-item>
+      <el-form-item label="Password">
+        <el-input type="password" v-model="password" required></el-input>
+      </el-form-item>
+      <el-button type="primary" @click="login">Login</el-button>
+    </el-form>
   </div>
 </template>
 
 <script>
-import apiService from './js/common/apiService'; // 根据你的项目结构调整路径
+import apiService from './js/common/apiService';
 
 export default {
     name: 'UserLogin',
