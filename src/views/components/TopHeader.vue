@@ -13,8 +13,8 @@
       @select="handleSelect"
       active-text-color="#ffd04b"
     >
-      <el-menu-item index="1">首页</el-menu-item>
-      <el-menu-item index="2">代理记账</el-menu-item>
+      <el-menu-item index="1"><router-link to="/home" style="text-decoration:none">首页</router-link></el-menu-item>
+      <el-menu-item index="2" ><router-link to="/account" style="text-decoration:none">代理记账</router-link></el-menu-item>
       <el-menu-item index="3">0元开公司</el-menu-item>
       <el-menu-item index="4">专利/版权</el-menu-item>
       <el-menu-item index="5">商标注册</el-menu-item>

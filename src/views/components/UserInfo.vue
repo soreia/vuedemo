@@ -17,12 +17,12 @@
 </template>
 
 <style>
-.user-info {
+/* .user-info {
     display: flex;
 }
 
 .sidebar {
-    width: 200px;
+    width: 150px;
     background-color: #f0f0f0;
     padding: 20px;
 }
@@ -30,5 +30,5 @@
 .content {
     flex: 1;
     padding: 20px;
-}
+} */
 </style>
