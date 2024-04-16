@@ -5,7 +5,14 @@ import Logout from '../views/Logout.vue'
 import phoneDialog from '../views/components/phoneDialog.vue'
 import Error from '../views/Error.vue'
 import Account from '../views/Account.vue'
+import AutoDialog from '../views/components/autoDialog.vue';  // 导入 AutoDialog 组件
+
 const routes = [
+    {
+        path: '/autoDialog',
+        name: 'AutoDialog',
+        component: AutoDialog,
+      },
     {
         path: '/phoneDialog',
         name: 'phoneDialog',

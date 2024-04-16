@@ -3,7 +3,7 @@
   <el-dialog
     title="电话通信"
     width="30%"
-    :visible="localDialogVisible"
+    v-model:visible="localDialogVisible"
   >
     <div>免费回电</div>
     <div>请放心接听 服务时间全天24小时</div>

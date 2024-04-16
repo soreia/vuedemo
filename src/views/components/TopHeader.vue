@@ -58,7 +58,7 @@ export default {
 .safe {
   height: 34px;
   width: 90px;
-  background:url('../../image/icon-safeguard.PNG') no-repeat;
+  background:url('../../image/icon-safeguard.png') no-repeat;
   margin-right: 10px;
   margin-left: 10px;
 }
