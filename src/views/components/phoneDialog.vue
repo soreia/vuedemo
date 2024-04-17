@@ -3,7 +3,7 @@
   <el-dialog
     title="电话通信"
     width="30%"
-    v-model:visible="localDialogVisible"
+    :visible="localDialogVisible"
   >
     <div>免费回电</div>
     <div>请放心接听 服务时间全天24小时</div>
@@ -47,7 +47,7 @@
     this.$emit('updatePhoneDialogVisible', this.localDialogVisible); 
   },
   savePhoneMessage(){
-    this.$apiService.post('http://localhost:8091/api/savePhoneMessage', {
+    this.apiService.post('http://localhost:8091/api/savePhoneMessage', {
       phoneNum: this.input1,
       phoneMessage: this.input3
     }).then(response => {

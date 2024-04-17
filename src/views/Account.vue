@@ -23,7 +23,7 @@ export default {
     methods: {
         submit() {
             // 处理提交逻辑
-            this.apiService.post('http://localhost:8091/api/usercomment', {
+            this.apiService.post('http://localhost:8091/usercomment', {
                 nickname: this.nickname,
                 phone: this.phone,
                 demand: this.demand

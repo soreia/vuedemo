@@ -85,7 +85,7 @@ export default {
 .guarantee-item {
   display: inline-block;
   width:30%;
-  margin:20px;
+  margin:10px;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

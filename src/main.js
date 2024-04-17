@@ -8,7 +8,8 @@ import ApiService from './js/common/apiService';
 
 Vue.use(VueRouter);
 Vue.use(ElementUI);
-Vue.prototype.$apiService = ApiService;  // 将 API 服务添加到 Vue 原型
+Vue.prototype.apiService = ApiService;  // 将 API 服务添加到 Vue 原型
+
 const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,

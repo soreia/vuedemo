@@ -1,6 +1,6 @@
 <template>
     <div>
-        <el-dialog v-model:visible="dialogVisible" title="Dialog Title">
+        <el-dialog :visible="dialogVisible" title="Dialog Title">
             <el-form ref="form" :model="form" label-width="100px">
                 <el-form-item label="业务需求">
                     <el-select v-model="form.selectedBusiness" placeholder="请选择业务需求">

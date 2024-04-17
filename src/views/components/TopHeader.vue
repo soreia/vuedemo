@@ -15,10 +15,10 @@
     >
       <el-menu-item index="1"><router-link to="/home" style="text-decoration:none">首页</router-link></el-menu-item>
       <el-menu-item index="2" ><router-link to="/account" style="text-decoration:none">代理记账</router-link></el-menu-item>
-      <el-menu-item index="3">0元开公司</el-menu-item>
+      <el-menu-item index="3"><router-link to="/company" style="text-decoration:none">0元开公司</router-link></el-menu-item>
       <el-menu-item index="4">专利/版权</el-menu-item>
-      <el-menu-item index="5">商标注册</el-menu-item>
-      <el-menu-item index="6">资质许可</el-menu-item>
+      <el-menu-item index="5"><router-link to="/mark" style="text-decoration:none">商标注册</router-link></el-menu-item>
+      <el-menu-item index="6">游戏</el-menu-item>
       <el-button type="primary" style="margin-top: 10px;">免费电话</el-button>
     </el-menu>
   </div>

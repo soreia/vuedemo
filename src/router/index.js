@@ -5,14 +5,25 @@ import Logout from '../views/Logout.vue'
 import phoneDialog from '../views/components/phoneDialog.vue'
 import Error from '../views/Error.vue'
 import Account from '../views/Account.vue'
-import AutoDialog from '../views/components/autoDialog.vue';  // 导入 AutoDialog 组件
-
+import AutoDialog from '../views/components/autoDialog.vue'; // 导入 AutoDialog 组件
+import Company from '../views/company.vue' // 或者从你的 Snake 组件的实际路径导入
+import Mark from '../views/mark.vue'
 const routes = [
+    {
+        path: '/mark',
+        name: 'Mark',
+        component: Mark
+      },
+    {
+        path: '/company',
+        name: 'Company',
+        component: Company
+    },
     {
         path: '/autoDialog',
         name: 'AutoDialog',
         component: AutoDialog,
-      },
+    },
     {
         path: '/phoneDialog',
         name: 'phoneDialog',

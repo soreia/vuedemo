@@ -22,7 +22,7 @@
     </div>
 
   </div>
-  <auto-dialog v-model:visible="dialogVisible" />
+  <auto-dialog v-model="dialogVisible" />
   </div>
   
 </template>
